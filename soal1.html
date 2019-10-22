@@ -1,0 +1,93 @@
+<html>
+    <head>
+            <style>
+                    
+                    h1 {
+                      color: white;
+                      text-align: center;
+                    }
+                    
+                    p {
+                      font-family: verdana;
+                      font-size: 20px;
+                    }
+
+                    div { 
+                        
+                        position: relative;
+                        margin: auto;
+                        text-align: center;
+                    }
+                    p {
+                        position: relative;
+                        margin: 0px;
+                    }
+
+                    .other {
+                        border: 1px solid black;
+                        position: absolute;
+                        margin: auto;
+                    }
+
+                    #divall {
+                        width: 720px;
+                        height: 480px;
+                        align-content: center;
+                    }
+
+                    #div1 {
+                        height: 100%;
+                        width: 100%;
+                        background-color: whitesmoke;
+                        z-index: 1;
+                    }
+
+                    #div2 {
+                        height: 80%;
+                        width: 80%;
+                        left: 10%;
+                        top: 10%;
+                        background-color: orange;
+                        z-index: 2;
+                    }
+
+                    #div3 {
+                        height: 60%;
+                        width: 60%;
+                        left: 20%;
+                        top: 20%;
+                        background-color: green;
+                        z-index: 3;
+                    }
+
+                    
+                    </style>
+
+    </head>
+    <body>
+        <div id="divAll">
+            <div id="div1" class="other" onclick="div1()">
+                <p>DIV 1</p>
+            </div>
+            <div id="div2" class="other" onclick="div2()">
+                <p>DIV 2</p>
+            </div>
+            <div id="div3" class="other" onclick="div3()" >
+                <p>DIV 3</p>
+            </div>
+
+        </div>
+
+        <script>
+            function div1() {
+                alert("DIV 1");
+            }
+            function div2() {
+                alert("DIV 2");
+            }
+            function div3() {
+                alert("DIV 3");
+            }
+        </script>
+    </body>
+</html>
